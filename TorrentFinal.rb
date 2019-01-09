@@ -1,14 +1,14 @@
 require 'byebug'
 require_relative 'rgp'
 require_relative 'glp'
-require_relative 'non_rgp_slab'
+require_relative 'NonRgpSlab'
 require_relative 'ltp'
 require_relative 'ltmd1'
-require_relative 'street_light_service'
-require_relative 'Low_Tension_Temporary_Supply'
-require_relative 'high_tension_maximum_demand'
-require_relative 'High_Tension_Water_and_Sewage_Pumping'
-require_relative 'High_Tension_Maximum_Demand_Temporary_Supply'
+require_relative 'StreetLightService'
+require_relative 'LowTensionTemporarySupply'
+require_relative 'HighTensionMaximumDemand'
+require_relative 'HighTensionWaterAndSewagePumping'
+require_relative 'HighTensionMaximumDemandTemporarySupply'
 
 # Class for take input Unit and categoris form user and call different class
 class Torrent
@@ -63,13 +63,13 @@ class Torrent
     when 7
       StreetLightService.new(unit).cal
     when 8
-      Lowtensiontemporaryupply.new(unit).cal
+      LowTensionTemporarySupply.new(unit).cal
     when 9
-      Hightensionmaximumdemand.new(unit).cal
+      HighTensionMaximumDemand.new(unit).cal
     when 10
       HighTensionWaterAndSewagePumping.new(unit).cal
     when 11
-      High_Tension_Maximum_Demand_Temporary_Supply.new(unit).cal
+      HighTensionMaximumDemandTemporarySupply.new(unit).cal
     end
   end
 end

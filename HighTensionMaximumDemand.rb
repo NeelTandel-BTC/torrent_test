@@ -1,4 +1,4 @@
-class High_Tension_Maximum_Demand
+class HighTensionMaximumDemand
 
   attr_accessor :unit
 

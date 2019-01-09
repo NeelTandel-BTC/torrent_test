@@ -1,5 +1,5 @@
 # calculate charge for Low Tension Temporary Supply
-class Lowtensiontemporarysupply
+class LowTensionTemporarySupply
   attr_accessor :unit
 
   TMPFIX = 25
